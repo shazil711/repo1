@@ -4,8 +4,16 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index():
-    return 'Welcome to Python Flask World 1.0 with automate trigger'
+import random
+
+
+
+result = random.randint(0,1)
+
+if result == 0:
+    print("tails")
+else:
+    print("Heads")
 
 
 if __name__ == '__main__':
